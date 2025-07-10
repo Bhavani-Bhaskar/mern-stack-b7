@@ -1,0 +1,31 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skill List Viewer</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    ul { list-style-type: square; margin-top: 10px; }
+    li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+
+  <h1>🚀 My Skills</h1>
+  <ul id="skills-list"></ul>
+
+  <script>
+    const content = "HTML,CSS,Javascript, Typescript, mongodb, express.js,react.js,node.js";
+    const skills = content.split(',').map(skill => skill.trim());
+    const listElement = document.getElementById('skills-list');
+
+    skills.forEach(skill => {
+      const li = document.createElement('li');
+      li.textContent = skill;
+      listElement.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>

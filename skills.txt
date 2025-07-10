@@ -1,0 +1,8 @@
+1. HTML
+2. CSS
+3. Javascript
+4. Typescript
+5. mongodb
+6. express.js
+7. react.js
+8. node.js
